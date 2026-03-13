@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMW Details | India</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="https://icon-library.com/images/bmw-icon/bmw-icon-11.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+    <!-- Navigation (same as before) -->
+    <nav class="navbar">
+        <div class="logo">
+            <img src="https://1000logos.net/wp-content/uploads/2018/02/BMW-Logo.png" alt="BMW Logo" class="bmw-logo">
+            <span>India</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="models.html">Models</a></li>
+            <li><a href="compare.html">Compare Models</a></li>
+        </ul>
+        <div class="nav-right">
+            <a href="#" class="nav-icon"><i class="fas fa-search"></i></a>
+            <a href="#" class="nav-icon"><i class="fas fa-user"></i></a>
+            <div class="menu-toggle"><i class="fas fa-bars"></i></div>
+        </div>
+    </nav>
+
+    <!-- Hero Image Section -->
+    <section class="details-hero">
+        <img id="main-car-image" src="" alt="BMW Car" class="hero-image">
+    </section>
+
+    <!-- Details Content -->
+    <section class="details-content">
+        <div class="container">
+            <h1 id="car-name-title" class="car-title">BMW Model</h1>
+
+            <!-- Specifications Grid -->
+            <div class="specs-grid" id="specs-grid"></div>
+
+            <!-- Description -->
+            <div class="description-box">
+                <h3>Description</h3>
+                <p id="car-description"></p>
+            </div>
+
+            <!-- Key Features -->
+            <div class="features-box">
+                <h3>Key Features</h3>
+                <ul id="features-list" class="features-list"></ul>
+            </div>
+
+            <!-- Action Buttons -->
+            <div class="action-buttons">
+                <button class="btn test-drive-btn"><i class="fas fa-calendar-check"></i> Book Test Drive</button>
+                <button class="btn download-btn"><i class="fas fa-download"></i> Download Brochure</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Chatbot Widget -->
+    <div class="chatbot-widget">
+        <div class="chat-icon" id="chat-icon"><i class="fas fa-robot"></i></div>
+        <div class="chat-box" id="chat-box">
+            <div class="chat-header">
+                <span>BMW Assistant</span>
+                <i class="fas fa-times" id="close-chat"></i>
+            </div>
+            <div class="chat-messages" id="chat-messages">
+                <div class="bot-message">Hello! Ask me about any BMW model.</div>
+            </div>
+            <div class="chat-input-area">
+                <input type="text" id="chat-input" placeholder="Type a message...">
+                <button id="send-chat"><i class="fas fa-paper-plane"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
