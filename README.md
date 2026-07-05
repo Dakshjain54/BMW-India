@@ -1,4 +1,4 @@
-# 🚗 BMW India Full Stack Web Application
+# 🚗 BMW India Web Application
 
 This project is a **BMW India inspired web application** that showcases different BMW car models and allows users to explore car details and comparisons.
 
@@ -11,8 +11,6 @@ The project is built using a **full-stack architecture** with a frontend interfa
 - 🚗 View BMW car models
 - 📊 Compare different car models
 - 📄 View detailed information about cars
-- 🔎 Dynamic data fetched from backend
-- 🗄 Database integration for storing car data
 
 ---
 
@@ -22,13 +20,6 @@ Frontend
 - HTML
 - CSS
 - JavaScript
-
-Backend
-- Node.js
-- Express.js
-
-Database
-- MySQL
 
 ---
 
