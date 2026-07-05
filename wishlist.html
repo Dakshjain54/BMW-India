@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BMW · Wishlist</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="shortcut icon" href="https://toppng.com/uploads/preview/bmw-logo-transparent-11659175291kvxh0ngsus.png" type="image/x-icon">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,700;1,700&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <link rel="stylesheet" href="css/animations.css" />
+</head>
+
+<body>
+    <!-- LOADER, CURSOR, TOAST, BACK TOP -->
+    <div id="loader">
+        <div class="loader-ring"></div>
+        <div class="loader-text">Loading Experience</div>
+    </div>
+    <div class="scroll-progress" id="scrollProgress"></div>
+    <div class="cursor-glow" id="cursorGlow"></div>
+    <div class="cursor-ring" id="cursorRing"></div>
+    <div class="cursor-dot" id="cursorDot"></div>
+    <div class="toast-container" id="toastContainer"></div>
+    <button class="back-top" id="backTop"><i class="fas fa-arrow-up"></i></button>
+
+    <!-- NAVBAR -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <a href="index.html" class="nav-logo"><i class="fas fa-car"></i> BMW <span>· Showcase</span></a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="cars.html">Cars</a></li>
+                <li><a href="compare.html">Compare</a></li>
+                <li><a href="wishlist.html" class="active">Wishlist</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="theme-toggle" id="themeToggle"><i class="fas fa-moon"></i></button>
+                <a href="wishlist.html"><i class="fas fa-heart"></i><span class="wishlist-count"
+                        id="wishlistCount">0</span></a>
+                <button class="nav-toggle" id="navToggle"><i class="fas fa-bars"></i></button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- PAGE: WISHLIST -->
+    <section class="page active" id="page-wishlist">
+        <div class="container" style="padding-top:40px;">
+            <div class="section-header"><span class="section-label">Saved</span>
+                <h2 class="section-title">Your <span>Wishlist</span></h2>
+                <p class="section-sub">Cars you've marked as favorites.</p>
+            </div>
+            <div id="wishlistContent"></div>
+        </div>
+    </section>
+
+    <script src="js/data.js"></script>
+    <script src="js/utils.js"></script>
+    <script src="js/wishlist.js"></script>
+</body>
+
+</html>

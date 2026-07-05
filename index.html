@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BMW · Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="shortcut icon" href="https://toppng.com/uploads/preview/bmw-logo-transparent-11659175291kvxh0ngsus.png" type="image/x-icon">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,700;1,700&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <link rel="stylesheet" href="css/animations.css" />
+</head>
+
+<body>
+    <!-- LOADER -->
+    <div id="loader">
+        <div class="loader-ring"></div>
+        <div class="loader-text">Loading Experience</div>
+    </div>
+
+    <!-- SCROLL PROGRESS -->
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <!-- CURSOR -->
+    <div class="cursor-glow" id="cursorGlow"></div>
+    <div class="cursor-ring" id="cursorRing"></div>
+    <div class="cursor-dot" id="cursorDot"></div>
+
+    <!-- TOAST -->
+    <div class="toast-container" id="toastContainer"></div>
+
+    <!-- BACK TO TOP -->
+    <button class="back-top" id="backTop"><i class="fas fa-arrow-up"></i></button>
+
+    <!-- NAVBAR -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <a href="index.html" class="nav-logo"><i class="fas fa-car"></i> BMW <span>· Showcase</span></a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="cars.html">Cars</a></li>
+                <li><a href="compare.html">Compare</a></li>
+                <li><a href="wishlist.html">Wishlist</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="theme-toggle" id="themeToggle"><i class="fas fa-moon"></i></button>
+                <a href="wishlist.html"><i class="fas fa-heart"></i><span class="wishlist-count"
+                        id="wishlistCount">0</span></a>
+                <button class="nav-toggle" id="navToggle"><i class="fas fa-bars"></i></button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- PAGE: HOME -->
+    <section class="page active" id="page-home">
+        <!-- Hero -->
+        <div class="hero">
+            <div class="hero-bg"></div>
+            <div class="hero-content">
+                <div class="hero-badge float-element"><i class="fas fa-bolt"
+                        style="margin-right:8px;color:var(--bmw-blue);"></i> 2026 Collection</div>
+                <h1>The Ultimate<br />Driving Machine</h1>
+                <p>Experience unparalleled performance, luxury, and innovation.</p>
+                <div class="hero-buttons">
+                    <a href="cars.html" class="btn btn-primary"><i class="fas fa-arrow-right"></i> Explore Cars</a>
+                    <a href="compare.html" class="btn btn-outline"><i class="fas fa-sliders-h"></i> Compare</a>
+                </div>
+            </div>
+            <div class="hero-scroll"><span>Scroll</span><i class="fas fa-chevron-down"></i></div>
+        </div>
+
+        <!-- Featured -->
+        <section class="section">
+            <div class="container">
+                <div class="section-header"><span class="section-label">Featured</span>
+                    <h2 class="section-title">Our <span>Collection</span></h2>
+                    <p class="section-sub">Handpicked masterpieces.</p>
+                </div>
+                <div class="featured-grid" id="featuredGrid"></div>
+            </div>
+        </section>
+
+        <!-- Why Choose -->
+        <section class="section" style="padding-top:0;">
+            <div class="container">
+                <div class="section-header"><span class="section-label">Why M</span>
+                    <h2 class="section-title">Engineered for <span>Excellence</span></h2>
+                </div>
+                <div class="why-grid">
+                    <div class="why-item"><i class="fas fa-tachometer-alt"></i>
+                        <h4>Unrivaled Performance</h4>
+                        <p>M TwinPower Turbo engines.</p>
+                    </div>
+                    <div class="why-item"><i class="fas fa-gem"></i>
+                        <h4>Luxury Craftsmanship</h4>
+                        <p>Premium materials.</p>
+                    </div>
+                    <div class="why-item"><i class="fas fa-code-branch"></i>
+                        <h4>Innovation First</h4>
+                        <p>Cutting-edge tech.</p>
+                    </div>
+                    <div class="why-item"><i class="fas fa-shield-alt"></i>
+                        <h4>Pure Heritage</h4>
+                        <p>Motorsport DNA.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-grid">
+                    <div class="footer-brand">
+                        <h3><i class="fas fa-car"></i> M · Performance</h3>
+                        <p>Ultimate driving machines.</p>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Explore</h4><a href="cars.html">All Cars</a><a href="compare.html">Compare</a><a
+                            href="wishlist.html">Wishlist</a>
+                    </div>
+                </div>
+                <div class="footer-bottom"><span>&copy; 2026 M Performance.</span>
+                    <div class="footer-socials"><a href="#"><i class="fab fa-instagram"></i></a></div>
+                </div>
+            </div>
+        </footer>
+    </section>
+
+    <script src="js/data.js"></script>
+    <script src="js/utils.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

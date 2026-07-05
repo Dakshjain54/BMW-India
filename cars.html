@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BMW · Cars</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="shortcut icon" href="https://toppng.com/uploads/preview/bmw-logo-transparent-11659175291kvxh0ngsus.png" type="image/x-icon">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,700;1,700&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <link rel="stylesheet" href="css/animations.css" />
+</head>
+
+<body>
+    <!-- LOADER -->
+    <div id="loader">
+        <div class="loader-ring"></div>
+        <div class="loader-text">Loading Experience</div>
+    </div>
+    <div class="scroll-progress" id="scrollProgress"></div>
+    <div class="cursor-glow" id="cursorGlow"></div>
+    <div class="cursor-ring" id="cursorRing"></div>
+    <div class="cursor-dot" id="cursorDot"></div>
+    <div class="toast-container" id="toastContainer"></div>
+    <button class="back-top" id="backTop"><i class="fas fa-arrow-up"></i></button>
+
+    <!-- NAVBAR -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <a href="index.html" class="nav-logo"><i class="fas fa-car"></i> BMW <span>· Showcase</span></a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="cars.html" class="active">Cars</a></li>
+                <li><a href="compare.html">Compare</a></li>
+                <li><a href="wishlist.html">Wishlist</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="theme-toggle" id="themeToggle"><i class="fas fa-moon"></i></button>
+                <a href="wishlist.html"><i class="fas fa-heart"></i><span class="wishlist-count"
+                        id="wishlistCount">0</span></a>
+                <button class="nav-toggle" id="navToggle"><i class="fas fa-bars"></i></button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- PAGE: CARS -->
+    <section class="page active" id="page-cars">
+        <div class="container" style="padding-top:40px;">
+            <div class="section-header"><span class="section-label">Our Fleet</span>
+                <h2 class="section-title">Explore the <span>Collection</span></h2>
+            </div>
+            <div class="cars-toolbar">
+                <div class="search-box"><i class="fas fa-search"></i><input type="text" id="carSearch"
+                        placeholder="Search..." /></div>
+                <div class="filters">
+                    <select id="filterPrice">
+                        <option value="all">All Prices</option>
+                        <option value="0-50">Below ₹50 Lakh</option>
+                        <option value="50-100">₹50 Lakh - ₹1 Crore</option>
+                        <option value="100-150">₹1 - ₹1.5 Crore</option>
+                        <option value="150+">Above ₹1.5 Crore</option>
+                    </select>
+                    <select id="filterFuel">
+                        <option value="all">All Fuel</option>
+                        <option value="Petrol">Petrol</option>
+                        <option value="Electric">Electric</option>
+                    </select>
+                    <select id="filterTrans">
+                        <option value="all">All Transmission</option>
+                        <option value="Automatic">Automatic</option>
+                        <option value="DCT">DCT</option>
+                        <option value="Manual">Manual</option>
+                    </select>
+                    <select id="sortCars">
+                        <option value="default">Sort by</option>
+                        <option value="price-asc">Price: Low → High</option>
+                        <option value="price-desc">Price: High → Low</option>
+                    </select>
+                </div>
+                <div class="view-toggle"><button class="active" data-view="grid"><i
+                            class="fas fa-th"></i></button><button data-view="list"><i class="fas fa-list"></i></button>
+                </div>
+            </div>
+            <div class="cars-grid" id="carsGrid"></div>
+            <div class="pagination" id="pagination"></div>
+        </div>
+    </section>
+
+    <script src="js/data.js"></script>
+    <script src="js/utils.js"></script>
+    <script src="js/cars.js"></script>
+</body>
+
+</html>
